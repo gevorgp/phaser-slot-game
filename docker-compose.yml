@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  phaser-game-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: phaser_dev_container
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm start
+    restart: unless-stopped

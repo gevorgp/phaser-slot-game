@@ -1,0 +1,1 @@
+export type TSymbolKey = 'symbol1' | 'symbol2' | 'symbol3';
